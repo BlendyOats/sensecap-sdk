@@ -2,8 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-    <groupId>cc.seeed.sensecap-dev-sdk</groupId>
+    <groupId>cc.seeed.sensecap-sdk</groupId>
     <modelVersion>4.0.0</modelVersion>
     <version>1.1.0-RELEASE</version>
     <artifactId>sensecap-java-sdk</artifactId>
@@ -45,6 +44,8 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
     </distributionManagement>
+
+
     <build>
         <plugins>
             <plugin>
@@ -100,6 +101,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
