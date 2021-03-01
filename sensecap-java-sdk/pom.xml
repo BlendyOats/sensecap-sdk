@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <groupId>cc.seeed.sensecap-sdk</groupId>
+    <groupId>com.chmakered</groupId>
     <modelVersion>4.0.0</modelVersion>
-    <version>1.1.0-RELEASE</version>
-    <artifactId>sensecap-java-sdk</artifactId>
+    <version>1.0-RELEASE</version>
+    <artifactId>seeed-sensecap-java-sdk</artifactId>
     <packaging>jar</packaging>
-    <name>sensecap-java-sdk</name>
-    <description>sensecap-java-sdk</description>
+    <name>seeed-sensecap-java-sdk</name>
+    <description>seeed sensecap java sdk</description>
     <url>https://github.com/BlendyOats/sensecap-sdk</url>
 
 
@@ -22,14 +22,14 @@
     <developers>
         <developer>
             <name>oats</name>
-            <email>herong.que@chaihuo.org</email>
+            <email>herong.que@chaohuo.org</email>
             <url>https://github.com/BlendyOats</url>
         </developer>
     </developers>
 
 
     <scm>
-        <url>https://github.com/BlendyOats/sensecap-sdk</url>
+        <url>https://github.com/BlendyOats/sensecap-sdk/tree/master</url>
         <connection>https://github.com/BlendyOats/sensecap-sdk.git</connection>
         <developerConnection>https://github.com/BlendyOats</developerConnection>
     </scm>
@@ -44,9 +44,8 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
     </distributionManagement>
-
-
     <build>
+        <pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -101,9 +100,6 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
@@ -117,6 +113,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        </pluginManagement>
     </build>
 
 
